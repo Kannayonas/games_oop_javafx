@@ -2,6 +2,7 @@ package ru.job4j.puzzle;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class WinTest {
@@ -16,6 +17,7 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isTrue();
     }
+
     @Test
     public void whenHorizontalWin() {
         int[][] board = {
@@ -27,6 +29,8 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isTrue();
     }
+
+
     @Test
     public void whenNotWin() {
         int[][] board = {
@@ -38,6 +42,8 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isFalse();
     }
+
+
     @Test
     public void whenNotWinL() {
         int[][] board = {
