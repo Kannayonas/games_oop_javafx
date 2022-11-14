@@ -16,7 +16,6 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isTrue();
     }
-
     @Test
     public void whenHorizontalWin() {
         int[][] board = {
@@ -28,7 +27,6 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isTrue();
     }
-
     @Test
     public void whenNotWin() {
         int[][] board = {
@@ -40,7 +38,6 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isFalse();
     }
-
     @Test
     public void whenNotWinL() {
         int[][] board = {
@@ -52,5 +49,4 @@ public class WinTest {
         };
         assertThat(Win.check(board)).isFalse();
     }
-
 }
